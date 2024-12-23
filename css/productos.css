@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+  }
+  
+
+  :root{
+    --color1 :  rgb(34, 34, 34);
+    --sombra1 : #073487;
+    --colorLogo: white;
+    --texto : "Permanent Marker", cursive;
+    --texto2 :"Franklin Gothic Medium";
+  }
+
+  
+/*cabecera*/
+header{
+
+    display: flex;
+    background-color: var(--color1);
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: auto;
+    padding: 0px 40px 0px 20px;
+    box-shadow: 1px 2px 20px var(--sombra1);
+}
+.cabecera_items{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-family: var(--texto);
+}
+.cabecera_logo{
+    align-self: center;
+    color: var(--colorLogo);
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: var(--texto)
+}
+.cabecera_busqueda{
+    color: var(--color1);
+    margin: 5px;
+    width: 230px;
+    align-self: center;
+    height: 35px;
+    padding-left: 25px;
+    border-radius: 10px;
+    font-size: 15px; 
+    font-family: var(--texto);
+}
+
+.cabecera_login{
+    align-self: center;
+    color: var(--colorLogo);
+    text-decoration: none;
+    white-space: nowrap;
+}
+/*PRODUCTOS*/
+.Titulo{
+    margin: 10px 50px;
+    font-family: var(--texto);
+}
+
+.contenedor_seccion{
+    width: auto;
+    display: flex;
+}
+.contenedor_formulario_producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:1px 5px 10px var(--sombra1);
+    font-family: var(--texto);
+    width: 30%;
+    height: 350px;
+    margin: 0px 40px 40px 20px;
+    padding-top: 50px;
+    gap: 25px;
+    border-radius: 45px;
+}
+.formulario_producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.input_formulario{
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 1px 5px;
+    font-family: var(--texto);
+}
+.contenedor_botonesfomulario{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.botonesfomulario{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.botonAgregar{
+    background-color: var(--color1);
+    color: var(--colorLogo);
+    font-family: var(--texto);
+}
+.botonEliminar{ 
+    background-color: var(--colorLogo);
+    color: var(--color1);
+    font-family: var(--texto);
+}
+
+.container_productos{
+    margin: 0px 20px 40px 40px;
+    width: 65%;
+    height: 700px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 10px -5px var(--sombra1);
+}
+
+.carta_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color1);
+    align-items: center;
+    width: 200px;
+    height: 260px;
+    padding: 2px;
+    gap: 5px;
+    border-radius: 25px;
+    color: var(--colorLogo);
+}
+.contenedor_imagen{
+height: 180px;    
+}
+.imagen_producto{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+ }
+ .items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5px;
+    font-family: var(--texto2);
+ }
+ .texto{
+width: 150px;
+ }
+ .delete-button{
+    background-color: var(--color1);
+    border: none;
+    width: 20px;
+    height: 25px;
+    display: flex;
+    align-self: flex-end;
+ }
+ .iconodelete{
+    align-items: center;
+ }
+
+footer{
+    background-color: #073487;
+     
+}
+.footer_imagen{
+    max-width: 90%;    
+    height: auto;  
+    border: #ffffff;
+}
+.Titulo2{
+    display: none;
+}
+
+
+
+@media (max-width: 950px) {
+  
+    .container_productos{
+        width: 45%;
+    }
+    .contenedor_formulario_producto{
+        width: 45%;
+   }
+   .Titulo{
+    font-size: 25px;
+    }
+}
+@media (max-width: 750px) {
+        .contenedor_seccion{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .container_productos{
+            width: 90%;
+            margin: 10px 5px;
+        }
+        .contenedor_formulario_producto{
+            width: 90%;
+            margin: 20px 5px;
+        }
+        .cabecera_items{
+            display: none;
+        }
+        .Titulo{
+            display: none;
+        }
+        .Titulo2{
+            display: block;
+            font-family: var(--texto);
+            font-size: 25px;
+            text-align: center;
+            margin: 5px;
+        }
+    }

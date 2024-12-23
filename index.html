@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/productos.css">
+    <title>ArulaGeek</title>
+</head>
+<body>
+    <header>
+      <h1 class="cabecera_logo">ArulaGeek</h1>
+            <div class="cabecera_items">
+            <input class="cabecera_busqueda" type="text" placeholder="Buscar Producto">
+            <a class="cabecera_login"  href="#">Log in</a>
+            <a class="cabecera_login"  href="#">Registrarte</a>
+            </div>
+    </header>
+    <h1 class="Titulo">Mis Productos</h1>
+<div class="contenedor_seccion">
+    <section data-product class="container_productos">
+                
+    </section>
+    <h1 class="Titulo2">Mis Productos</h1>
+    <section class="contenedor_formulario_producto" data-form>
+        <h2>Agregar Producto</h2>
+        <form class="formulario_producto" id="formulario" action="">
+            <input data-name class="input_formulario" type="text" placeholder="Nombre...">
+            <input data-price class="input_formulario" type="text" placeholder="Precio...">
+            <input  data-image class="input_formulario" type="text"placeholder="Imagen...">
+            <div class="contenedor_botonesfomulario">
+                <button  type="submit"  class="botonesfomulario botonAgregar" >Agregar</button>
+                <button type="reset" class="botonesfomulario botonEliminar" >Limpiar</button>    
+             </div>
+        </form>
+    </section>
+</div>
+    <footer>
+        <img class="footer_imagen" src="./media/footer.png" alt="">
+    </footer>
+    
+ <script type="module" src="./js/services/main.js"></script>   
+</body>
+</html>
