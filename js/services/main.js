@@ -18,7 +18,7 @@ function createCard({name, price, image, id}){
             <p>$ ${price}</p>
             </div>
          <button class="delete-button btn-delete" data-id="${id}" >
-         <img src="../media/delete.png" alt="">
+         <img src="./media/delete.png" alt="">
          </button>
          </div>`;
          //eliminando producto
